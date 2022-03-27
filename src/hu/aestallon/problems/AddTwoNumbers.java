@@ -40,9 +40,16 @@ import hu.aestallon.utils.ListNode;
  */
 public class AddTwoNumbers {
 
+    /**
+     * Adds two numbers stored in {@link ListNode} formats together.
+     *
+     * @param l1 a number stored in a {@code ListNode}
+     * @param l2 a number stored in a {@code ListNode}
+     * @return the sum of the parameters as an instance of {@code ListNode}.
+     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int digitSum = 0;
         ListNode result = new ListNode();
+
         ListNode digit1 = l1;
         ListNode digit2 = l2;
         ListNode digitResult = result;

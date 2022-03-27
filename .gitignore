@@ -25,3 +25,6 @@ hs_err_pid*
 # IDEA files
 /.idea/
 LeetCode.iml
+
+# Test files
+/src/hu/aestallon/problems/Test.java

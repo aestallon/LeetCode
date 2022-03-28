@@ -56,31 +56,34 @@ public class AddTwoNumbers {
 
         while (digit1 != null || digit2 != null) {
 
-            // add two digits to the result
             if (digit1 != null) {
+                // store digit's value in result
                 digitResult.val += digit1.val;
+
+                // update the digit's pointer
+                if (digit1.next != null) {
+                    digit1 = digit1.next;
+                } else {
+                    digit1 = null;
+                }
             }
+
             if (digit2 != null) {
-            digitResult.val += digit2.val;
+                // store digit's value in result
+                digitResult.val += digit2.val;
+
+                // update the digit's pointer
+                if (digit2.next != null) {
+                    digit2 = digit2.next;
+                } else {
+                    digit2 = null;
+                }
             }
 
             //handle a 'digit' higher than 10
             if (digitResult.val >= 10) {
                 digitResult.val -= 10;
                 digitResult.next = new ListNode(1);
-            }
-
-            // update both digit pointers
-            try {
-                digit1 = digit1.next;
-            } catch (NullPointerException e) {
-                digit1 = null;
-            }
-
-            try {
-                digit2 = digit2.next;
-            } catch (NullPointerException e) {
-                digit2 = null;
             }
 
             // update the result digit pointer

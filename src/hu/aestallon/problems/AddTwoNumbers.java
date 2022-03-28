@@ -36,7 +36,16 @@ import hu.aestallon.utils.ListNode;
  * <li>0 <= Node.val <= 9
  * <li>It is guaranteed that the list represents a number that
  * does not have leading zeros
+ * </ul><p>
+ * Status: <b>ACCEPTED</b>
+ * </p><ul>
+ * <li>Speed: <i>5 ms -</i> beats 12.41 % of java submissions.
+ * <li>Memory: <i>48 MB :</i> beats 34.77 % of java submissions.
  * </ul>
+ *
+ * @author Szabolcs Bazil Papp <papp.szabolcs.bazil@gmail.com>
+ * @version 1.0
+ * @since 17.0.2
  */
 public class AddTwoNumbers {
 

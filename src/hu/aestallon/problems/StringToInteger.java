@@ -60,7 +60,7 @@ import java.util.regex.Pattern;
  */
 public class StringToInteger {
 
-    private static final String REGEX = "\\ *([+\\-]?(0*(\\d*)))";
+    private static final String REGEX = "\\ *([+\\-]?)(0*)(\\d*)";
     private static final Pattern p = Pattern.compile(REGEX);
 
     /**
@@ -78,10 +78,7 @@ public class StringToInteger {
             return 0;
         }
 
-        boolean isNegative = false;
-        if (m.group(1).length() > 0) {
-            isNegative = m.group(1).charAt(0) == '-';
-        }
+        boolean isNegative = m.group(1).equals("-");
 
         long lResult = 0;
         if (m.group(3).length() > 0) {

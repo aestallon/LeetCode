@@ -17,22 +17,19 @@ import java.util.ArrayList;
  * Example 1:
  * </p><blockquote>
  * <code>
- * Input: x = 123
- * Output: 321
+ * Input: x = 123; Output: 321
  * </code>
  * </blockquote><p>
  * Example 2:
  * </p><blockquote>
  * <code>
- * Input: x = -123
- * Output: -321
+ * Input: x = -123; Output: -321
  * </code>
  * </blockquote><p>
  * Example 3:
  * </p><blockquote>
  * <code>
- * Input: x = 120
- * Output: 21
+ * Input: x = 120; Output: 21
  * </code>
  * </blockquote><p>
  * <b>Constraints:</b>

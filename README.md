@@ -14,3 +14,4 @@ Leetcode problem solutions in Java
 - [ ] No11. Container With Most Water
 - [ ] No12. Integer to Roman
 - [x] No13. Roman to Integer
+- [x] No38. Count and Say
